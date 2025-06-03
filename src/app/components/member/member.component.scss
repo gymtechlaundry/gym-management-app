@@ -1,0 +1,25 @@
+ ion-card {
+    border-radius: 10px;
+    margin: 2vh 1vh;
+    div {
+        margin: 0.8vh 0.2vh 0.8vh 1vh;
+        ion-row.business-info {
+            width: 85%;
+            justify-self: end;
+            ion-col {
+                display: flex;
+                justify-content: end;
+                div {
+                    ion-label {
+                        font-size: 0.65rem;
+                    }
+                    p {
+                        font-size: 0.6rem;
+                        font-weight: bold;
+                        margin: 8px 0 0 0;
+                    }
+                }
+            }
+        }
+    }
+ }

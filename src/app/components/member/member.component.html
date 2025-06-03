@@ -1,0 +1,40 @@
+<ion-card [routerLink]="['/', 'tabs', 'members', member()?.id]">
+    <div>
+        <app-member-personal-detail [member] = "member()"></app-member-personal-detail>
+
+        <ion-row class="business-info">
+            <ion-col size="4">
+                <div align="start">
+                    <ion-label color="dark">Plan Expiry</ion-label>
+                    <p>
+                        <ion-text color="dark">
+                            {{ member()?.package?.planExpiryDate }}
+                        </ion-text>
+                    </p>
+                </div>
+            </ion-col>
+
+            <ion-col size="4">
+                <div align="start">
+                    <ion-label color="dark">Day Remaining</ion-label>
+                    <p>
+                        <ion-text color="dark">
+                            {{ member()?.package?.daysRemaining }}
+                        </ion-text>
+                    </p>
+                </div>
+            </ion-col>
+
+            <ion-col size="4">
+                <div align="start">
+                    <ion-label color="dark">Due Amount</ion-label>
+                    <p>
+                        <ion-text color="dark">
+                            {{ member()?.package?.dueAmount }}
+                        </ion-text>
+                    </p>
+                </div>
+            </ion-col>
+        </ion-row>
+    </div>
+</ion-card>
